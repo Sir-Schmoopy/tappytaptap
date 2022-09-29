@@ -1,6 +1,10 @@
 require 'webrick'
 require 'sinatra'
 
+get '/' do
+  erb :home
+end
+
 get '/hello' do
   'Say hello to your new virtual friend!'
 end
